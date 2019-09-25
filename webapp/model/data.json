@@ -1,0 +1,24 @@
+{
+	"animals": [{
+			"name": "Tigar",
+			"city": "Rajisthan",
+			"place": "Rajisthan WL",
+			"type": "Wild"
+		},
+		{
+			"name": "Deer",
+			"city": "Dhampur",
+			"place": "Dhampur WL",
+			"type": "Wild"
+		},
+		{
+			"name": "Shark",
+			"city": "Goa",
+			"place": "Goa WL",
+			"type": "Bird"
+		}
+	]
+
+
+
+}

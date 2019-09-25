@@ -1,0 +1,20 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="zsan.ElementBinding.controller.detail"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Details">
+				<content>
+					
+					    <Label text="Name" labelFor="inp1"/>
+						<Input id="inp1" />
+						<Label text="city" labelFor="inp2"/>
+						<Input id="inp2" />
+						<Label text="place" labelFor="inp3"/>
+						<Input id="inp3" />
+						<Label text="Type" labelFor="inp4"/>
+						<Input id="inp4" />		
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

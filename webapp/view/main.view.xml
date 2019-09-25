@@ -1,0 +1,71 @@
+<mvc:View controllerName="zsan.ElementBinding.controller.main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+                                         xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Table id="idTable" items="{animals>/animals/}" itemPress="onItemPress">
+							<columns>
+								<Column>
+									<Text text="Name"/>
+								</Column>
+								<Column>
+									<Text text="City"/>
+								</Column>
+								<Column>
+									<Text text="Place"/>
+								</Column>
+								<Column>
+									<Text text="Type"/>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem type="Active">
+									<cells>
+										<Text text="{animals>name}"/>
+										<Text text="{animals>city}"/>
+										<Text text="{animals>place}"/>
+										<Text text="{animals>type}"/>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+						
+		  <f:SimpleForm id="SimpleForm"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Address"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label text="Name" />
+				<Input id="name" value="{animals>name}" />
+				<Label text="City" />
+				<Input id="city" value="{animals>city}" />
+				<Label text="Place" />
+				<Input id="place" value="{animals>place}" />
+				<Label text="Type" />
+				<Input id="type" value="{animals>type}" />	
+				<Label text=""/>
+				<Button text="Save" press="onSave" type="Emphasized"/>
+			</f:content>	
+		</f:SimpleForm>
+						
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
